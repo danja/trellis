@@ -27,7 +27,7 @@ Trellis.load = function(url, callback) {
  */
 Trellis.toTurtle = function(baseURI, callback) { // TODO use node-n3/browserify
     var turtle = "@prefix dc: <http://purl.org/dc/terms/> . \n";
-    turtle += "@prefix ts: <http://hyperdata.org/trellis/> . \n\n";
+    turtle += "@prefix ts: <http://hyperdata.it/trellis/> . \n\n";
 
     var ts_printout = function($node, kidCount, index, callback) {
         // console.log("$Node = " + $node.html());
@@ -90,7 +90,7 @@ Trellis.recurseTree = function($ul, printout) {
  p redicate: 'http://www.w3.org/19*99/02/22-rdf-syntax-ns#type',
  object: 'http://example.org/cartoons#Cat',
  context: 'n3/contexts#default' }
- 
+
  var mickey = store.find(':Mickey', null, null)[0];
  console.log(mickey.subject, mickey.predicate, mickey.object, '.');
  */
@@ -120,7 +120,7 @@ Trellis.renderHTML = function(turtle, containerElement) {
 
     var buildTree = function(store, containerElement, template) {
         // console.log("build tree");
-        var root = store.find(null, 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'http://hyperdata.org/trellis/RootNode')[0].subject;
+        var root = store.find(null, 'http://www.w3.org/1999/02/22-rdf-syntax-ns#type', 'http://hyperdata.it/trellis/RootNode')[0].subject;
 
         var rootSplit = root.split("/");
         var rootId = rootSplit[rootSplit.length - 1];
@@ -130,7 +130,7 @@ Trellis.renderHTML = function(turtle, containerElement) {
         var buildChildren = function(nodeURI, container) {
 
             // console.log("build children nodeURI=" + nodeURI + "  container=" + container.html());
-            var children = store.find(null, 'http://hyperdata.org/trellis/parent', nodeURI);
+            var children = store.find(null, 'http://hyperdata.it/trellis/parent', nodeURI);
             if (children.length) {
                 container.addClass("ts-open");
                 var container = $('<ul />').appendTo(container);
@@ -143,7 +143,7 @@ Trellis.renderHTML = function(turtle, containerElement) {
             var sortedChildren = new Array(children.length);
             for (var i = 0; i < children.length; i++) {
                 // console.log(children[i]);
-                var sortedIndexString = store.find(children[i].subject, 'http://hyperdata.org/trellis/index', null)[0].object;
+                var sortedIndexString = store.find(children[i].subject, 'http://hyperdata.it/trellis/index', null)[0].object;
 
                 var sortedIndex = sortedIndexString.substring(1, sortedIndexString.length - 1);
                 // console.log("sortedIndex = " + sortedIndex);

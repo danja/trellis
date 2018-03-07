@@ -4,7 +4,7 @@ var fs = require('fs');
 fs.readFile('../workflowy_2013-12-07.txt', 'utf8', function(err, data) { // _2013-12-07
     if (err)
         throw err;
-    var result = workflowy2turtle(data, "http://hyperdata.org/trellis/workflowy/");
+    var result = workflowy2turtle(data, "http://hyperdata.it/trellis/workflowy/");
     fs.writeFile('../workflowy.ttl', result, 'utf8');
     console.log("\n\n\n");
     console.log(result);
@@ -16,7 +16,7 @@ fs.readFile('../workflowy_2013-12-07.txt', 'utf8', function(err, data) { // _201
 function workflowy2turtle(source, baseURI) {
 
     var turtle = "@prefix dc: <http://purl.org/dc/terms/> . \n";
-    turtle += "@prefix ts: <http://hyperdata.org/trellis/> . \n\n";
+    turtle += "@prefix ts: <http://hyperdata.it/trellis/> . \n\n";
 
     var inText = false;
     var indent = 0;
@@ -114,7 +114,7 @@ function workflowy2turtle(source, baseURI) {
 function escape(char) {
     //   if(char == "<") return "&lt;";
     //   if(char == ">") return "&gt;";
-    //   if(char == "&") return "&amp;"; 
+    //   if(char == "&") return "&amp;";
     if (char == "\"") return "'";
     //    if(char == "'") return "&apos;";
     return char;
