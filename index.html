@@ -11,9 +11,9 @@
     <script type="text/javascript" src="js/jquery-ui-1.10.3/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.10.3/ui/jquery.ui.core.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.10.3/ui/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.10.3/ui/jquery.ui.mouse.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.10.3/ui/jquery.ui.position.js"></script>
 
-    <script type="text/javascript" src="js/jquery-ui-1.10.3/ui/jquery.ui.mouse.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.10.3/ui/jquery.ui.draggable.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.10.3/ui/jquery.ui.droppable.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.10.3/ui/jquery.ui.sortable.js"></script>
@@ -29,6 +29,8 @@
     <script type="text/javascript" src="js/trellis-ui.js"></script>
     <script type="text/javascript" src="js/trellis-comms.js"></script>
     <script>
+        const SPARQL_ENDPOINT = "http://localhost:3030/trellis";
+
         $(function() {
 
             var success = function(turtle) { // sample.ttl // should be calling Trellis.load .. http://localhost:8888/pages/trellis
@@ -40,7 +42,7 @@
             // http://localhost:8888/graphs/trellis
             // http://localhost:8888/graphs/workflowy
             $.ajax({
-                url: "http://server:3030/trellis",
+                url: SPARQL_ENDPOINT,
                 headers: {
                     Accept: "text/turtle"
                 },
