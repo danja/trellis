@@ -1,17 +1,19 @@
 /*  Trellis CSS
     danja 2013-11-05
 ---------------------*/
- * {
+* {
     font-size: 100%;
     margin: 0;
     padding: 0;
     /*  line-height: 1.3em; */
 }
+
 html {
     background-color: #eee;
 }
-body {
-}
+
+body {}
+
 #header-outer {
     margin: auto;
     color: #fff;
@@ -25,19 +27,24 @@ body {
     -moz-border-bottom-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-#header, #footer {
+
+#header,
+#footer {
     margin-right: 400px;
     display: block;
-    font-family:'jurademibold', Arial, sans-serif;
+    font-family: 'jurademibold', Arial, sans-serif;
     font-size: 150%;
     font-weight: 150%;
 }
+
 .hidden {
     display: none;
 }
+
 .date {
     display: none;
 }
+
 #menu-box {
     float: left;
     text-align: left;
@@ -47,24 +54,26 @@ body {
     -moz-border-radius: 10px;
     border-radius: 10px;
     /* margin: 15px auto; */
-    margin:16px 0px 0px 16px;
+    margin: 16px 0px 0px 16px;
     padding: 5px;
     border-color: #fff;
-    border-style:solid;
-    border-width:2px;
+    border-style: solid;
+    border-width: 2px;
     box-shadow: 1px 1px 1px #222;
     -mox-box-shadow: 1px 1px 1px #222;
     -webkit-box-shadow: 1px 1px 1px #222;
 }
+
 .toolbar ul {
-    list-style-type:none;
-    margin:0;
+    list-style-type: none;
+    margin: 0;
     padding: .2em 0;
     background-color: #666;
     color: #FFF;
     /* width: 100%; */
     /*  font: normal arial, helvetica, sans-serif; */
 }
+
 .toolbar li {
     /*  display:inline; */
     text-align: center;
@@ -72,12 +81,14 @@ body {
     background-color: #666;
     color: #FFF;
 }
+
 .toolbar button {
-    font-family:'jurademibold', Arial, sans-serif;
+    font-family: 'jurademibold', Arial, sans-serif;
     /* display:block; */
     margin: 5px;
-    width:130px;
+    width: 130px;
 }
+
 .text-box {
     text-align: left;
     background-color: #666;
@@ -85,7 +96,7 @@ body {
     -moz-border-radius: 10px;
     border-radius: 10px;
     /* margin: 15px auto; */
-    margin:16px 0px 0px 16px;
+    margin: 16px 0px 0px 16px;
     padding: 5px;
     background: #fff;
     box-shadow: 1px 1px 1px #444;
@@ -93,17 +104,20 @@ body {
     -mox-box-shadow: 1px 1px 1px #444;
     -webkit-box-shadow: 1px 1px 1px #444;
 }
+
 #shortcuts-text {
-    display:none;
+    display: none;
     position: fixed;
     top: 200px;
     left: 10px;
     margin: 5px;
-    width:130px;
+    width: 130px;
 }
+
 #container {
     position: fixed;
-    top: 35px;
+    top: 80px;
+    /* 35 */
     left: 200px;
     text-align: center;
     overflow-y: scroll;
@@ -125,6 +139,7 @@ margin: 15px auto;
     -webkit-box-shadow: 1px -1px 4px #444;
     height: 1000px;
 }
+
 .page {
     margin: 15px auto;
     background-color: #fff;
@@ -134,33 +149,41 @@ margin: 15px auto;
     display: block;
     /*  width: 76.5em; */
 }
+
 .page ul {
     margin: 0 0 1em 1.2em;
 }
+
 .page ol {
     margin: 0 0 1em 1.6em;
 }
-.page ul ul, .page ol ul {
+
+.page ul ul,
+.page ol ul {
     margin: 0 0 0 1.2em;
     font-size: 0.95em;
 }
-.page ul ol, .page ol ol {
+
+.page ul ol,
+.page ol ol {
     margin: 0 0 0 1.6em;
     font-size: 0.95em;
 }
+
 /* CARD */
- #card {
+#card {
     display: none;
     width: 25%;
     border-color: #aaa;
-    border-style:solid;
-    border-width:1px;
+    border-style: solid;
+    border-width: 1px;
     padding: 0 10px;
     position: relative;
     float: right;
     margin-right: 2%;
     font-family: Freesans, sans-serif;
 }
+
 #card-title {
     display: block;
     word-break: break-all;
@@ -169,7 +192,7 @@ margin: 15px auto;
     color: #fff;
     background-color: #666;
     font-size: 120%;
-    font-family:'jurademibold', Arial, sans-serif;
+    font-family: 'jurademibold', Arial, sans-serif;
     /* display:block; */
     /* padding: 5px; */
     margin: 0px 0px 0px -10px;
@@ -181,45 +204,54 @@ margin: 15px auto;
     -moz-border-top-right-radius: 10px;
     border-top-right-radius: 10px;
 }
+
 #card-nid {
     font-size: 80%;
-    color : #00c;
+    color: #00c;
     padding: 5px 0px 5px 0px;
 }
+
 #card-content {
     padding: 5px 0px 5px 0px;
 }
+
 #card-date {
     font-size: 80%;
     color: #666;
     padding: 5px 0px 5px 0px;
 }
+
 #trellis-header {
-    width:70em;
+    width: 70em;
 }
+
 /*
 #trellis-header dt {
     width:66em;
 }
 */
- .trellis-undo {
-    float:right;
+.trellis-undo {
+    float: right;
 }
+
 #trellis {
     display: block;
     margin: 0;
     list-style: none;
 }
+
 #trellis ul {
     font-size: 1em;
     list-style: none;
 }
+
 #trellis li {
     display: block;
     width: 100%;
     display: block;
     clear: both;
 }
+
 #trellis .ts-entry {
     position: relative;
     display: block;
@@ -227,8 +259,9 @@ margin: 15px auto;
     border-top: 3px;
     /*  solid #dfd;  ruled lines */
     /*  padding-top: 1px; */
-    background:#fff;
+    background: #fff;
 }
+
 /*
 #trellis dt{
     float: left;
@@ -245,31 +278,35 @@ margin: 15px auto;
     float: left;
 }
 */
- #trellis .ts-actions {
+#trellis .ts-actions {
     display: none;
     padding: 0px 2px 3px 5px;
 }
+
 #trellis .ts-dragger {
     position: absolute;
     top: 3px;
     right: 0;
 }
+
 .ts-handle {
     position: relative;
     left: -835px;
-    display:none;
-    cursor:move;
+    display: none;
+    cursor: move;
     color: blue;
     float: left;
     font-size: 120%;
-    font-weight:normal;
-    padding:0px 15px 0px 15px;
+    font-weight: normal;
+    padding: 0px 15px 0px 15px;
     /* ////////////////////// */
     /*  margin: 0 1px 0 0; */
 }
+
 #trellis div:hover {
     display: block;
 }
+
 /*
 #trellis dl:hover dd, #trellis dd:hover {
     display: block;
@@ -281,20 +318,23 @@ margin: 15px auto;
     display: none;
 }
 */
- #trellis a {
+#trellis a {
     border: none;
 }
+
 #trellis .ts-expander {
-    cursor:pointer;
+    cursor: pointer;
     position: absolute;
     left: -10px;
     top: 4px;
 }
+
 #trellis .ts-open {
     cursor: pointer;
     /*  background: url(../img/ts-li.gif) left repeat-y; */
 }
-#trellis .ts-open > .ts-entry > .ts-expander {
+
+#trellis .ts-open>.ts-entry>.ts-expander {
     cursor: pointer;
     /* .ts-open > dl > .ts-expander  */
     display: block;
@@ -303,7 +343,8 @@ margin: 15px auto;
     height: 1em;
     background: url(../img/ts-open.gif) 50% 50% no-repeat;
 }
-#trellis .ts-closed > .ts-entry > .ts-expander {
+
+#trellis .ts-closed>.ts-entry>.ts-expander {
     cursor: pointer;
     display: block;
     width: 20px;
@@ -311,13 +352,16 @@ margin: 15px auto;
     height: 1em;
     background: url(../img/ts-closed.gif) 50% 50% no-repeat;
 }
+
 #trellis .ts-closed ul {
     cursor: pointer;
     display: none;
 }
+
 #ts-entry-template {
     display: none
 }
+
 .ts-title {
     cursor: text;
     font-family: Freesans, sans-serif;
@@ -330,24 +374,28 @@ margin: 15px auto;
     margin-left: 16px;
     padding: 0 0 0 1px;
 }
+
 .ts-actions * {
     float: left;
     cursor: pointer;
-    font-weight:bold;
+    font-weight: bold;
     color: green;
-    padding:0px 5px 0px 15px;
+    padding: 0px 5px 0px 15px;
 }
+
 /*
 .dragRow td {
     background-color:  silver;
 }
 */
- .ts-highlight {
+.ts-highlight {
     background-color: #eee;
 }
+
 .ts-selected {
     background-color: #ffa;
 }
+
 #sortHelper {
     height: 1px !important;
     background: #000;
@@ -356,9 +404,11 @@ margin: 15px auto;
     position: relative;
     z-index: 100;
 }
-#sortHelper + li {
+
+#sortHelper+li {
     margin-top: 0;
 }
+
 /*
 #dropMenu {
     background: #333; 
@@ -381,11 +431,11 @@ margin: 15px auto;
     font-weight:bold;
 }
 */
- #trellis .dropzone {
-    height:8px;
+#trellis .dropzone {
+    height: 8px;
     /* was 6px */
-    background-color:#fff;
-    border-top:4px solid #dfd;
+    background-color: #fff;
+    border-top: 4px solid #dfd;
     /* ruled lines */
     /* was 4px #dfd; */
 }
