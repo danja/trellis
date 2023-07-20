@@ -31,9 +31,9 @@
     <script>
         const SPARQL_ENDPOINT = "https://fuseki.hyperdata.it/trellis/";
 
-        $(function() {
+        $(function () {
 
-            var success = function(turtle) { // sample.ttl // should be calling Trellis.load .. http://localhost:8888/pages/trellis
+            var success = function (turtle) { // sample.ttl // should be calling Trellis.load .. http://localhost:8888/pages/trellis
                 var containerElement = $("#trellis");
                 Trellis.renderHTML(turtle, containerElement);
                 Trellis.init();
@@ -56,6 +56,7 @@
 </head>
 
 <body>
+    <script id="replace_with_navbar" src="/hkms/share/nav.js"></script>
     <div id="header-outer">
         <div id="header">&#8225;&nbsp;&nbsp;Trellis&nbsp;&nbsp;&#8225;</div>
     </div>
@@ -75,13 +76,14 @@
 
     <div id="shortcuts-text" title="Shortcuts" class="text-box">
         <p>Expand / collapse control + space
-            <br/>Indent tab
-            <br/>Outdent shift + tab
-            <br/>Zoom in alt + right
-            <br/>Zoom out alt + left
-            <br/>(or hit 'enter' on an empty line)
-            <br/>Move alt + shift + arrows
-            <br/>Delete control + shift + backspace</p>
+            <br />Indent tab
+            <br />Outdent shift + tab
+            <br />Zoom in alt + right
+            <br />Zoom out alt + left
+            <br />(or hit 'enter' on an empty line)
+            <br />Move alt + shift + arrows
+            <br />Delete control + shift + backspace
+        </p>
     </div>
 
     <div id="container">
